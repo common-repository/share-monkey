@@ -1,0 +1,137 @@
+
+
+/* Share Icon Styles
+////////////////////*/
+
+.share_monkey_bar{
+    display: inline-block !important;
+    padding: 0 !important;
+    margin: 15px 0 !important;
+}
+.share_monkey_bar.share_monkey_inside_featured{
+    display: flex !important;
+    justify-content: center
+}
+.share_monkey_bar *{
+    outline: none !important;
+    text-decoration: none !important;
+    box-shadow: none !important;
+}
+.share_monkey_bar_item{
+    width: 50px;
+    height: 50px;
+    margin: 2px 2px !important;
+    background-size: 300px;
+    text-align: center;
+    position: relative;
+    list-style: none;
+    display: inline-block;
+}
+.share_monkey_bar_item a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.share_monkey_bar_item:before{
+    font-size: 26px;
+    line-height: 50px;
+}
+.share_monkey_small .share_monkey_bar_item{
+    width: 30px;
+    height: 30px;
+    background-size: 180px;
+}
+.share_monkey_small .share_monkey_bar_item:before{
+    
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.share_monkey_large .share_monkey_bar_item{
+    width: 80px;
+    height:80px;
+    background-size: 480px;
+}
+
+.share_monkey_large .share_monkey_bar_item:before{
+    font-size: 46px;
+    line-height: 80px;
+}
+
+.share_monkey_bar_item_twitter{
+    background-position: 250px 0 ;
+}
+.share_monkey_bar_item_google{
+    background-position: 200px 0 ;
+}
+.share_monkey_bar_item_pinterest{
+    background-position: 150px 0 ;
+}
+.share_monkey_bar_item_linkedin{
+    background-position: 100px 0 ;
+}
+.share_monkey_bar_item_whatsapp{
+    background-position: 50px 0 ;
+}
+.share_monkey_bar_item_facebook{
+    background-position: 0px 0 ;
+}
+
+
+.share_monkey_small .share_monkey_bar_item_twitter{
+    background-position: 150px 0 ;
+}
+.share_monkey_small .share_monkey_bar_item_google{
+    background-position: 120px 0 ;
+}
+.share_monkey_small .share_monkey_bar_item_pinterest{
+    background-position: 90px 0 ;
+}
+.share_monkey_small .share_monkey_bar_item_linkedin{
+    background-position: 60px 0 ;
+}
+.share_monkey_small .share_monkey_bar_item_whatsapp{
+    background-position: 30px 0 ;
+}
+.share_monkey_small .share_monkey_bar_item_facebook{
+    background-position: 0 0 ;
+}
+
+
+.share_monkey_large .share_monkey_bar_item_twitter{
+    background-position: 400px 0 ;
+}
+.share_monkey_large .share_monkey_bar_item_google{
+    background-position: 320px 0 ;
+}
+.share_monkey_large .share_monkey_bar_item_pinterest{
+    background-position: 240px 0 ;
+}
+.share_monkey_large .share_monkey_bar_item_linkedin{
+    background-position: 160px 0 ;
+}
+.share_monkey_large .share_monkey_bar_item_whatsapp{
+    background-position: 80px 0 ;
+}
+.share_monkey_large .share_monkey_bar_item_facebook{
+    background-position: 0 0 ;
+}
+
+
+.share_monkey_default .share_monkey_bar_item{
+    background-image: url(../img/social_icons.svg)
+}
+.share_monkey_floating  {
+    position: fixed;
+    left: 0;
+    z-index: 9999;
+    top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.share_monkey_floating .share_monkey_bar_item{
+    display:block;
+}

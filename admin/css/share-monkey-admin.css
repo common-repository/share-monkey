@@ -1,0 +1,243 @@
+
+/* 
+/* Common styles
+****************/
+
+.share_monkey_admin_wrapper {
+    background: #ffffff;
+    font-family: Nunito;
+    font-size: 12px;
+    position: relative;
+}
+.share_monkey_admin_wrapper *{
+    box-sizing: border-box;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+.share_monkey_admin_wrapper h2{
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+.share_monkey_loading:after{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255,255,255,0.5);
+}
+.share_monkey_bar_item:before{
+    display:none;
+}
+.share_monkey_custom .share_monkey_bar_item:before{
+    display:inline-block;
+}
+.share_monkey_left{
+    flex: 0 0 400px;
+    padding-right: 30px
+}
+.share_monkey_right{
+    flex: 1 1 auto;
+}
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .share_monkey_loading:before {
+    -webkit-animation: rotating 1s linear infinite;
+    -moz-animation: rotating 1s linear infinite;
+    -ms-animation: rotating 1s linear infinite;
+    -o-animation: rotating 1s linear infinite;
+    animation: rotating 1s linear infinite;
+    content: ' ';
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    background: url(../img/share-flat2.png);
+    width: 100px;
+    height: 100px;
+    background-size: 100px;
+    z-index: 999;
+  }
+
+
+/* 
+/* Color Picker
+****************/
+
+.share_monkey_admin_wrapper .wp-picker-container .wp-color-result.button {
+    margin: 0 6px 6px 0;
+    padding: 0 0 0 30px;
+}
+.share_monkey_admin_wrapper .wp-color-result-text {
+    line-height: 22px;
+    padding: 0 6px;
+}
+.wp-color-result{
+    padding-left: 30px !important;
+}
+
+
+/* 
+/* Share Icon Styles
+****************/
+
+.share_monkey_social_icons_list_wrap {
+    display:flex;
+    justify-content: space-between;
+}
+.share_monkey_bar_wrap.share_monkey_right h3{
+    background: url(../img/ok.png) 0px 2px no-repeat;
+    padding-left: 40px;
+    background-size: 30px;
+ }
+ .share_monkey_bar_wrap.share_monkey_left{
+    flex: 0 0 370px;
+    margin-right: 30px;
+ }
+ #share_monkey_social_icons_all .share_monkey_remove{
+    display: none
+}
+.share_monkey_admin_wrapper  .share_monkey_bar{
+    width: 100%;
+    height: 90px;
+    display: flex !important;
+    align-items: center;
+    box-shadow: inset 0px 0px 28px 6px rgba(185, 174, 172, 0.25);
+    border: 1px solid #f4f4f4;
+    border-radius: 10px;
+    justify-content: center;
+    
+}
+.share_monkey_bar_wrap p{
+    padding: 5px 0;
+    font-size: 14px;
+}
+.share_monkey_bar_wrap h3{
+    padding: 10px 0;
+}
+
+
+/* 
+/* Admin form
+****************/
+
+#share_monkey_admin_form
+{
+    position: relative;
+}
+.share_monkey_settings_field{
+    border-bottom: 1px solid #f4f4f4;
+    padding: 20px 10px;
+}
+.share_monkey_settings_field .share_monkey_settings_field{
+    padding: 20px 20px;
+    background: #f9f1f1;
+}
+.share_monkey_settings_field .share_monkey_custom_bg_color{
+    margin-top: 15px;
+    border-radius: 7px 7px 0 0 ;
+}
+.share_monkey_settings_field .share_monkey_custom_text_color{
+    
+    border-radius: 0 0 7px 7px ;
+}
+
+.share_monkey_label{
+    color: #818181
+}
+.share_monkey_admin_wrapper{
+    padding: 30px 30px;
+}
+.share_monkey_field{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.share_monkey_description{
+    color: #9b9b9b
+}
+.share_monkey_field h3{
+    color: #434343;
+    padding-bottom: 15px;
+}
+.share_monkey_submit_btn{
+    padding: 10px 30px;
+    background:#ff694c;
+    color: #ffffff;
+    border: 0;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    word-spacing: 2px;
+}
+.share_monkey_field .share_monkey_right label{
+    padding-right: 10px;
+    font-weight: bold;
+}
+.share_monkey_show_on_places label{
+    display: block;
+    padding: 5px 0;
+}
+.share_monkey_remove{
+    text-indent: -999px;
+    background: url(../img/close.png) left bottom no-repeat;
+    display: none;
+    position: absolute;
+    bottom: -23px;
+    left: calc(50% - 10px);
+    width: 20px;
+    height: 25px;
+    cursor: pointer;
+    background-size: 20px;
+}
+.share_monkey_bar_item{
+    position: relative;
+}
+.share_monkey_bar_item:hover .share_monkey_remove{
+    display: inline-block;
+}
+
+
+/* 
+/* Error Styles
+****************/
+
+.share_monkey_admin_wrapper .share_monkey_error{
+    border-left-color: red;
+}
+.share_monkey_error_text {
+    max-height: 0;
+    animation: all 1s;
+    overflow: hidden;
+    color:red;
+}
+.share_monkey_error_min .share_monkey_error_min{
+    max-height: 30px;
+}
